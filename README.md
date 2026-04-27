@@ -557,7 +557,7 @@ This is a **production-grade Agentic AI & GenAI-integrated project** featuring:
 - DevOps best practices
 - Full-stack AI system development
 
-## 👨‍💻 Team Members
+##  Team Members
 
 - Prabal Shukla (EN22CS301713)
 - Pratik Koushal (EN22CS301747)
