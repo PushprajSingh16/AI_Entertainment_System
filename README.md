@@ -1,6 +1,6 @@
 #  AI Entertainment System
 
-A production-ready **Agentic AI & GenAI-integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practices.
+A production-ready **Agentic AI, GenAI & DevOps -integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practices.
 
 ##  Project Built With
 
