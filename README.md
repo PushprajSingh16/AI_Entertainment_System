@@ -556,3 +556,11 @@ This is a **production-grade Agentic AI & GenAI-integrated project** featuring:
 - Building GenAI applications
 - DevOps best practices
 - Full-stack AI system development
+
+## 👨‍💻 Team Members
+
+- Prabal Shukla (EN22CS301713)
+- Pratik Koushal (EN22CS301747)
+- Priyansh Chouhan (EN22CS301759)
+- Pushpraj Singh Chouhan (EN22CS301774)
+- Rajat Malviya (EN22CS301783)
