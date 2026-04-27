@@ -1,29 +1,29 @@
-# 🎭 AI Entertainment System
+#  AI Entertainment System
 
 A production-ready **Agentic AI & GenAI-integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practices.
 
-## 🤖 Project Built With
+##  Project Built With
 
-- **🧠 Agentic AI** - Multi-step reasoning agents for complex entertainment queries
-- **🔬 Generative AI (GenAI)** - Groq LLM (Llama 3.1) for intelligent responses
-- **📊 RAG (Retrieval-Augmented Generation)** - FAISS vector database with semantic search
-- **🐳 DevOps Integrated** - Docker, Docker Compose, GitHub Actions CI/CD, containerized deployment
+- ** Agentic AI** - Multi-step reasoning agents for complex entertainment queries
+- ** Generative AI (GenAI)** - Groq LLM (Llama 3.1) for intelligent responses
+- ** RAG (Retrieval-Augmented Generation)** - FAISS vector database with semantic search
+- ** DevOps Integrated** - Docker, Docker Compose, GitHub Actions CI/CD, containerized deployment
 
-## ✨ Features
+##  Features
 
-- **🔐 Secure Authentication** - User login/signup with session management
-- **💬 AI Chat Interface** - Real-time chat with Groq AI (Llama 3.1-8b)
-- **🧠 Agentic AI Architecture** - Multi-step reasoning with agent-based problem solving
-- **🎯 RAG-Enhanced Responses** - Retrieved knowledge augmented generation for accurate, grounded answers
-- **📚 Vector Database** - FAISS + Sentence-Transformers for semantic search
-- **📊 Dashboard** - User activity tracking and analytics
-- **🎨 Modern UI** - Glassmorphism design with Framer Motion animations
-- **🐳 Docker & Docker Compose** - Production-ready containerization
-- **⚙️ DevOps CI/CD Pipeline** - GitHub Actions automated testing, building, and deployment
-- **📱 Responsive Design** - Works seamlessly across all devices
-- **🚀 Performance Optimized** - Fast inference with FAISS indexing
+- ** Secure Authentication** - User login/signup with session management
+- ** AI Chat Interface** - Real-time chat with Groq AI (Llama 3.1-8b)
+- ** Agentic AI Architecture** - Multi-step reasoning with agent-based problem solving
+- ** RAG-Enhanced Responses** - Retrieved knowledge augmented generation for accurate, grounded answers
+- ** Vector Database** - FAISS + Sentence-Transformers for semantic search
+- ** Dashboard** - User activity tracking and analytics
+- ** Modern UI** - Glassmorphism design with Framer Motion animations
+- ** Docker & Docker Compose** - Production-ready containerization
+- ** DevOps CI/CD Pipeline** - GitHub Actions automated testing, building, and deployment
+- ** Responsive Design** - Works seamlessly across all devices
+- ** Performance Optimized** - Fast inference with FAISS indexing
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 AI_Entertainment_System/
@@ -41,13 +41,13 @@ AI_Entertainment_System/
 │   ├── routes.py            # API endpoints
 │   ├── services.py          # Business logic & Groq AI integration
 │   ├── config.py            # Configuration management
-│   ├── genai/               # 🆕 Generative AI Module
+│   ├── genai/               # Generative AI Module
 │   │   ├── __init__.py
-│   │   ├── rag.py           # 🎯 RAG Pipeline (FAISS + Embeddings)
+│   │   ├── rag.py           #  RAG Pipeline (FAISS + Embeddings)
 │   │   └── groq_client.py   # Groq API client
 │   ├── Dockerfile           # Backend Docker image
 │   └── requirements.txt      # Python dependencies
-├── agent/                    # 🆕 Agentic AI Module
+├── agent/                    # Agentic AI Module
 │   ├── agent.py             # Multi-step reasoning agent
 │   ├── planner.py           # Task planning & orchestration
 │   └── README.md
@@ -58,14 +58,14 @@ AI_Entertainment_System/
 ├── .github/
 │   └── workflows/
 │       └── ci-cd.yml        # GitHub Actions CI/CD pipeline
-├── TEST_RAG.py              # 🆕 RAG system verification script
-├── RAG_IMPLEMENTATION.md    # 🆕 Detailed RAG documentation
-├── RAG_QUICK_REFERENCE.md  # 🆕 RAG quick start guide
+├── TEST_RAG.py              #  RAG system verification script
+├── RAG_IMPLEMENTATION.md    #  Detailed RAG documentation
+├── RAG_QUICK_REFERENCE.md  #  RAG quick start guide
 ├── docker-compose.yml       # Orchestration for all services
 └── README.md                # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -104,7 +104,7 @@ python main.py
 
 Backend will be available at `http://localhost:8000`
 
-## 🤖 AI Architecture
+##  AI Architecture
 
 ### Agentic AI System
 The project implements a multi-step reasoning agent architecture:
@@ -138,10 +138,10 @@ Response: "Based on entertainment knowledge, I recommend..."
 ```
 
 **Benefits:**
-- ✅ Grounded responses (no hallucinations)
-- ✅ Current knowledge (updated by adding documents)
-- ✅ Fast retrieval (<10ms)
-- ✅ Production-ready
+-  Grounded responses (no hallucinations)
+-  Current knowledge (updated by adding documents)
+-  Fast retrieval (<10ms)
+-  Production-ready
 
 ### DevOps Integration
 - **Containerization** - Docker images for frontend, backend, database
@@ -173,7 +173,7 @@ Frontend will be available at `http://localhost:5173`
 - **Backend API**: http://localhost:8000
 - **API Docs**: http://localhost:8000/docs
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Using Docker Compose (Recommended)
 
@@ -215,7 +215,7 @@ docker build -t ai-entertainment-frontend .
 docker run -p 3000:3000 ai-entertainment-frontend
 ```
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /signup` - Register a new user
@@ -231,7 +231,7 @@ docker run -p 3000:3000 ai-entertainment-frontend
 - `GET /docs` - Swagger UI
 - `GET /redoc` - ReDoc documentation
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 ### Backend (.env)
 
@@ -254,7 +254,7 @@ DATABASE_URL=sqlite:///./ai_entertainment.db
 VITE_API_URL=http://localhost:8000
 ```
 
-## 📦 Tech Stack
+##  Tech Stack
 
 **Frontend:**
 - React 19
@@ -272,11 +272,11 @@ VITE_API_URL=http://localhost:8000
 - Python-dotenv
 
 **Generative AI & ML:**
-- 🔬 **Groq LLM** - llama-3.1-8b-instant for fast inference
-- 📊 **FAISS** - Facebook AI Similarity Search for vector indexing
-- 🧬 **Sentence-Transformers** - all-MiniLM-L6-v2 for embeddings
-- 🤖 **Agentic AI** - Multi-step reasoning agents
-- 📈 **RAG Pipeline** - Retrieval-Augmented Generation system
+-  **Groq LLM** - llama-3.1-8b-instant for fast inference
+-  **FAISS** - Facebook AI Similarity Search for vector indexing
+-  **Sentence-Transformers** - all-MiniLM-L6-v2 for embeddings
+-  **Agentic AI** - Multi-step reasoning agents
+-  **RAG Pipeline** - Retrieval-Augmented Generation system
 
 **DevOps & Deployment:**
 - Docker & Docker Compose
@@ -284,7 +284,7 @@ VITE_API_URL=http://localhost:8000
 - PostgreSQL (optional)
 - Redis (optional)
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 The GitHub Actions pipeline includes:
 
@@ -307,7 +307,7 @@ The GitHub Actions pipeline includes:
    - Trivy vulnerability scanning
    - SARIF report generation
 
-## 🧪 Testing
+## Testing
 
 ### Frontend
 ```bash
@@ -325,7 +325,7 @@ black .            # Format code
 flake8 .           # Lint code
 ```
 
-### 🎯 RAG System Testing
+###  RAG System Testing
 
 The project includes comprehensive RAG (Retrieval-Augmented Generation) testing:
 
@@ -336,13 +336,13 @@ python TEST_RAG.py
 ```
 
 **What it tests:**
-- ✅ NumPy and FAISS integration
-- ✅ Sentence-Transformers embedding model
-- ✅ Document embeddings creation
-- ✅ FAISS index construction
-- ✅ Semantic search accuracy
-- ✅ Query augmentation with context
-- ✅ Performance metrics
+-  NumPy and FAISS integration
+-  Sentence-Transformers embedding model
+-  Document embeddings creation
+-  FAISS index construction
+-  Semantic search accuracy
+-  Query augmentation with context
+-  Performance metrics
 
 **Test API Endpoint with RAG:**
 ```bash
@@ -352,10 +352,10 @@ curl -X POST http://localhost:8001/api/agent \
 ```
 
 **RAG Documentation:**
-- 📖 [RAG_IMPLEMENTATION.md](RAG_IMPLEMENTATION.md) - Complete technical documentation
-- 📋 [RAG_QUICK_REFERENCE.md](RAG_QUICK_REFERENCE.md) - Quick start guide
+-  [RAG_IMPLEMENTATION.md](RAG_IMPLEMENTATION.md) - Complete technical documentation
+-  [RAG_QUICK_REFERENCE.md](RAG_QUICK_REFERENCE.md) - Quick start guide
 
-## 📝 API Examples
+##  API Examples
 
 ### Signup
 ```bash
@@ -402,7 +402,7 @@ curl -X POST http://localhost:8001/api/agent \
   -d '{"message": "What are some good movies to watch?"}'
 ```
 
-## 🚀 Advanced Features
+##  Advanced Features
 
 ### RAG (Retrieval-Augmented Generation) in Action
 
@@ -471,7 +471,7 @@ cd frontend
 npm run lint -- --fix
 ```
 
-## 📈 Performance
+##  Performance
 
 - **Frontend Build**: ~2.24s
 - **Backend Startup**: ~3-5s (includes RAG pipeline initialization)
@@ -481,7 +481,7 @@ npm run lint -- --fix
 - **Total API Latency**: <600ms
 - **Docker Build Time**: <3min
 
-## 🚨 Troubleshooting
+##  Troubleshooting
 
 ### Backend won't start
 - Check if port 8001 is available
@@ -505,7 +505,7 @@ npm run lint -- --fix
 - Check disk space for images
 - Remove old containers: `docker system prune`
 
-## 🔒 Security
+##  Security
 
 - Environment variables for sensitive data
 - CORS enabled for frontend-backend communication
@@ -513,22 +513,22 @@ npm run lint -- --fix
 - Password validation (minimum 6 characters)
 - Input validation on all endpoints
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details
 
-## 🤝 Contributing
+##  Contributing
 
 1. Create a feature branch: `git checkout -b feature/amazing-feature`
 2. Commit changes: `git commit -m 'Add amazing feature'`
 3. Push to branch: `git push origin feature/amazing-feature`
 4. Open a Pull Request
 
-## 📞 Support
+##  Support
 
 For issues and feature requests, please open an issue on GitHub.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Groq](https://groq.com/) for the AI API
 - [FastAPI](https://fastapi.tiangolo.com/) framework
@@ -538,17 +538,17 @@ For issues and feature requests, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ by the AI Entertainment Team**
+**Built with  by the AI Entertainment Team**
 
-### 🎯 Project Classification
+###  Project Classification
 
 This is a **production-grade Agentic AI & GenAI-integrated project** featuring:
 
-✅ **Agentic AI** - Multi-step reasoning agents for complex task orchestration  
-✅ **Generative AI** - Groq LLM integration for intelligent content generation  
-✅ **RAG System** - Retrieval-Augmented Generation for grounded, factual responses  
-✅ **DevOps Integrated** - Complete containerization and CI/CD pipeline  
-✅ **Enterprise-Ready** - Production deployment configurations included  
+ **Agentic AI** - Multi-step reasoning agents for complex task orchestration  
+ **Generative AI** - Groq LLM integration for intelligent content generation  
+ **RAG System** - Retrieval-Augmented Generation for grounded, factual responses  
+ **DevOps Integrated** - Complete containerization and CI/CD pipeline  
+ **Enterprise-Ready** - Production deployment configurations included  
 
 **Perfect for:**
 - Learning Agentic AI architectures
