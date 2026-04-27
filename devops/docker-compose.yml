@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: devops/Dockerfile
+    container_name: ai-entertainment-backend
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - HOST=0.0.0.0
+      - DEBUG=False
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GROQ_MODEL=llama-3.1-8b-instant
+    volumes:
+      - ../backend:/app/backend
+      - ../agent:/app/agent
+      - ../genai:/app/genai
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8001 --reload
+    networks:
+      - ai-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: ai-entertainment-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8001
+    volumes:
+      - ../frontend/src:/app/src
+      - ../frontend/index.html:/app/index.html
+      - ../frontend/vite.config.js:/app/vite.config.js
+    command: npm run dev -- --host
+    networks:
+      - ai-network
+    depends_on:
+      - backend
+
+networks:
+  ai-network:
+    driver: bridge
+
+volumes:
+  backend_data:
