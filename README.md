@@ -1,10 +1,7 @@
 #  AI Entertainment System
 
-<<<<<<< HEAD
-A production-ready **Agentic AI, GenAI & DevOps -integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practices.
-=======
-A production-ready **Agentic AI , GenAI & Devops -integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practices.
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+A production-ready **Agentic AI, GenAI & DevOps -integrated** full-stack application combining React, FastAPI, Groq LLM, FAISS Vector Database, and modern DevOps practice
+
 
 ##  Project Built With
 
@@ -73,11 +70,9 @@ AI_Entertainment_System/
 └── README.md                # This file
 ```
 
-<<<<<<< HEAD
-##  Quick Start
-=======
+
 ## Quick Start
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 ### Prerequisites
 
@@ -116,11 +111,9 @@ python main.py
 
 Backend will be available at `http://localhost:8000`
 
-<<<<<<< HEAD
+
 ##  AI Architecture
-=======
-## AI Architecture
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 ### Agentic AI System
 The project implements a multi-step reasoning agent architecture:
@@ -189,11 +182,9 @@ Frontend will be available at `http://localhost:5173`
 - **Backend API**: http://localhost:8000
 - **API Docs**: http://localhost:8000/docs
 
-<<<<<<< HEAD
-##  Docker Deployment
-=======
+
 ## Docker Deployment
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 ### Using Docker Compose (Recommended)
 
@@ -235,11 +226,9 @@ docker build -t ai-entertainment-frontend .
 docker run -p 3000:3000 ai-entertainment-frontend
 ```
 
-<<<<<<< HEAD
-##  API Endpoints
-=======
+
 ## API Endpoints
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 ### Authentication
 - `POST /signup` - Register a new user
@@ -255,11 +244,9 @@ docker run -p 3000:3000 ai-entertainment-frontend
 - `GET /docs` - Swagger UI
 - `GET /redoc` - ReDoc documentation
 
-<<<<<<< HEAD
-##  Environment Variables
-=======
+
 ## Environment Variables
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 ### Backend (.env)
 
@@ -282,11 +269,9 @@ DATABASE_URL=sqlite:///./ai_entertainment.db
 VITE_API_URL=http://localhost:8000
 ```
 
-<<<<<<< HEAD
-##  Tech Stack
-=======
+
 ## Tech Stack
->>>>>>> 65dddbd (Final update: Docker setup, RAG optional, project cleanup)
+
 
 **Frontend:**
 - React 19
