@@ -1,7 +1,23 @@
 import asyncio
+import sys
+import os
 import httpx
 from config import GROQ_API_KEY, GROQ_MODEL
-from genai.rag import augment_query
+
+# Add parent directory to path to import genai module from root
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Try to import RAG - graceful fallback if not installed
+try:
+    from genai.rag import augment_query
+    RAG_AVAILABLE = True
+    print("[INFO] RAG module loaded successfully")
+except ImportError:
+    RAG_AVAILABLE = False
+    print("[INFO] RAG module not available - running without RAG")
+    # Fallback function
+    def augment_query(query, k=3):
+        return query
 
 async def get_ai_response(user_input: str, use_rag: bool = True) -> str:
     """
@@ -23,13 +39,15 @@ async def get_ai_response(user_input: str, use_rag: bool = True) -> str:
     try:
         print(f"[GROQ] Processing message: {user_input}")
         
-        # Step 1: Augment query with RAG context if enabled
-        if use_rag:
+        # Step 1: Augment query with RAG context if enabled and available
+        if use_rag and RAG_AVAILABLE:
             print("[RAG] Retrieving relevant context...")
             augmented_prompt = augment_query(user_input, k=3)
             prompt_to_send = augmented_prompt
             print("[RAG] ✓ Context retrieved and augmented")
         else:
+            if use_rag:
+                print("[RAG] RAG disabled (module not installed)")
             prompt_to_send = user_input
         
         # Step 2: Send to Groq LLM with augmented prompt

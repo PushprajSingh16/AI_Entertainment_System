@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:8001";
+// API base URL - uses environment variable, falls back to localhost:8000 for local development
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const getAuthToken = () => localStorage.getItem("token");
 

@@ -7,23 +7,33 @@ app = FastAPI(title="AI Entertainment System API")
 # CORS Setup: Allow all origins for development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for development
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Routes ko include karna (Prefix /api frontend se match hona chahiye)
+# Routes include (with /api prefix)
 app.include_router(router, prefix="/api")
+
 
 @app.get("/")
 async def root():
     return {"message": "AI Entertainment Backend is running!"}
 
-@app.get("/api/health")
-async def health_root():
+
+# ✅ Health endpoint
+@app.get("/health")
+async def health():
     return {"status": "ok"}
 
+
+@app.get("/api/health")
+async def health_api():
+    return {"status": "ok"}
+
+
+# Local development run
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8001, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
