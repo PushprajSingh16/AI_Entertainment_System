@@ -1,5 +1,12 @@
-// API base URL - uses environment variable, falls back to localhost:8000 for local development
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+// API base URL
+// 1. Use VITE_API_URL if available (for production - Vercel)
+// 2. Otherwise fallback to Render backend
+// 3. Local dev ke liye localhost bhi support hai
+
+const API_BASE =
+  import.meta.env.VITE_API_URL ||
+  "https://ai-entertainment-system.onrender.com" ||
+  "http://localhost:8000";
 
 const getAuthToken = () => localStorage.getItem("token");
 
@@ -101,6 +108,6 @@ export const chatService = {
 export const apiService = {
   health: async () => {
     console.log("[HEALTH] Checking health");
-    return fetchWithAuth("/api/health");
+    return fetchWithAuth("/health"); // FIXED endpoint
   },
 };
