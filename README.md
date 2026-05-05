@@ -5,24 +5,24 @@ A production-ready **Agentic AI, GenAI & DevOps -integrated** full-stack applica
 
 ##  Project Built With
 
-- ** Agentic AI** - Multi-step reasoning agents for complex entertainment queries
-- ** Generative AI (GenAI)** - Groq LLM (Llama 3.1) for intelligent responses
-- ** RAG (Retrieval-Augmented Generation)** - FAISS vector database with semantic search
-- ** DevOps Integrated** - Docker, Docker Compose, GitHub Actions CI/CD, containerized deployment
+- **Agentic AI** - Multi-step reasoning agents for complex entertainment queries
+- **Generative AI (GenAI)** - Groq LLM (Llama 3.1) for intelligent responses
+- **RAG (Retrieval-Augmented Generation)** - FAISS vector database with semantic search
+- **DevOps Integrated** - Docker, Docker Compose, GitHub Actions CI/CD, containerized deployment
 
 ##  Features
 
-- ** Secure Authentication** - User login/signup with session management
-- ** AI Chat Interface** - Real-time chat with Groq AI (Llama 3.1-8b)
-- ** Agentic AI Architecture** - Multi-step reasoning with agent-based problem solving
-- ** RAG-Enhanced Responses** - Retrieved knowledge augmented generation for accurate, grounded answers
-- ** Vector Database** - FAISS + Sentence-Transformers for semantic search
-- ** Dashboard** - User activity tracking and analytics
-- ** Modern UI** - Glassmorphism design with Framer Motion animations
-- ** Docker & Docker Compose** - Production-ready containerization
-- ** DevOps CI/CD Pipeline** - GitHub Actions automated testing, building, and deployment
-- ** Responsive Design** - Works seamlessly across all devices
-- ** Performance Optimized** - Fast inference with FAISS indexing
+- **Secure Authentication** - User login/signup with session management
+- **AI Chat Interface** - Real-time chat with Groq AI (Llama 3.1-8b)
+- **Agentic AI Architecture** - Multi-step reasoning with agent-based problem solving
+- **RAG-Enhanced Responses** - Retrieved knowledge augmented generation for accurate, grounded answers
+- **Vector Database** - FAISS + Sentence-Transformers for semantic search
+- **Dashboard** - User activity tracking and analytics
+- **Modern UI** - Glassmorphism design with Framer Motion animations
+- **Docker & Docker Compose** - Production-ready containerization
+- **DevOps CI/CD Pipeline** - GitHub Actions automated testing, building, and deployment
+- **Responsive Design** - Works seamlessly across all devices
+- **Performance Optimized** - Fast inference with FAISS indexing
 
 ##  Project Structure
 
