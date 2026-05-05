@@ -78,8 +78,8 @@ AI_Entertainment_System/
 
 - Node.js 20+
 - Python 3.11+
-- Docker & Docker Compose (optional)
-- Groq API Key ([Get one here](https://console.groq.com))
+- Docker & Docker Compose 
+- Groq API Key 
 
 ### 1. Backend Setup
 
